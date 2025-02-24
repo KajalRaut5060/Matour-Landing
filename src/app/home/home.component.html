@@ -35,10 +35,16 @@
       <h2>Destinations</h2>
     </div>
     <div *ngFor="let tour of destinationsArray" class="destination-cards">
-      <mat-card appearance="outlined">
-        <mat-card-header>{{ tour.title }}</mat-card-header>
-        <mat-card-content>{{ tour.location }}</mat-card-content>
-        <img mat-card-image [src]="tour?.image" alt="beaches" />
+      <mat-card appearance="outlined" [ngStyle]="{'background-image': 'url(' + tour?.image + ')'}">
+        <div class="mat-card-content-position">
+          <mat-card-header>{{ tour.title }}</mat-card-header>
+          <mat-card-content>{{ tour.location }}</mat-card-content>
+          <mat-card-actions>
+            <button mat-button>
+              <mat-icon>arrow_forward</mat-icon>
+            </button>
+          </mat-card-actions>
+        </div>
       </mat-card>
     </div>
   </div>
@@ -130,10 +136,14 @@
   </div>
 </section>
 
+<!-- <section>
+
+</section> -->
+
 <section id="contact" class="section">
   <div class="contact-container">
     <div class="contact-image-container">
-      <img class="contact-image" src="../../assets/contact.jpeg" alt="" />
+      <img class="contact-image" src="../../assets/contact.avif" alt="" />
     </div>
 
     <div class="about-right">
@@ -202,19 +212,9 @@
       <p>Don't miss any deal! Subscribe & save on your travel.</p>
       <form class="footer-form">
         <label for="name">Name*</label>
-        <input
-          class="footer-subscribe"
-          type="text"
-          id="name"
-          placeholder="Enter your name"
-        />
+        <input class="footer-subscribe" type="text" id="name" placeholder="Enter your name" />
         <label for="email">Email*</label>
-        <input
-          class="footer-subscribe"
-          type="text"
-          id="email"
-          placeholder="Enter your email"
-        />
+        <input class="footer-subscribe" type="text" id="email" placeholder="Enter your email" />
         <button mat-raised-button>Subscribe</button>
       </form>
     </div>

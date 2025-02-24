@@ -37,6 +37,7 @@
   padding: 5px 20px;
   transition: color 0.3s ease;
   color: #fff !important;
+
   &:hover {
     color: orange !important;
     border: 0.5px solid white;
@@ -57,10 +58,12 @@
 .banner-content {
   text-align: center;
   margin-top: 100px;
+
   h1 {
     font-size: 4rem;
     font-weight: 700;
   }
+
   p {
     font-size: 1.5rem;
     margin-top: 50px;
@@ -71,10 +74,12 @@
   border: 1px solid white;
   border-radius: 50px;
   font-size: 1.2rem;
+  font-weight: 500;
   padding: 25px;
   margin-top: 50px;
   color: #fff !important;
   background: #0000 !important;
+
   &:hover {
     background-color: #ebe3e3 !important;
     color: orange !important;
@@ -83,11 +88,13 @@
 
 .banner-icons {
   margin-top: 50px;
+
   a {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
+
     &:hover {
       border-radius: 50px;
       background: #ebe3e3;
@@ -120,23 +127,37 @@
 }
 
 .destination-cards {
-  min-width: 350px;
   display: inline-block !important;
-  margin: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+
+  mat-card {
+    min-width: 350px;
+    margin: 20px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    mat-card-header {
+      font-weight: 500;
+    }
+  }
 }
 
 .blog-left {
   flex: 1;
   max-width: 50%;
   margin-right: 30px;
+
   h1 {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.5;
   }
+
   h3 {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -192,6 +213,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -204,6 +226,7 @@
   max-width: 40%;
   position: relative;
   left: -7%;
+
   p {
     letter-spacing: 1.6px !important;
     margin-bottom: 1rem;
@@ -225,10 +248,12 @@
   flex: 1;
   max-width: 50%;
   margin-right: 30px;
+
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
   }
+
   p {
     line-height: 1.6;
   }
@@ -295,6 +320,7 @@
   flex: 1;
   padding: 20px;
   display: block;
+
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -326,23 +352,28 @@
 .footer-contact {
   flex: 1;
   min-width: 250px;
+
   h3 {
     font-size: 1.5rem;
     font-weight: 700;
   }
+
   hr {
     border: none;
     border-top: 2px solid #ffc107;
     width: 50px;
     margin: 10px 0;
   }
+
   a {
     text-decoration: none;
     color: #fff;
   }
+
   ul {
     list-style: none;
     padding: 0;
+
     li {
       margin: 10px;
     }
@@ -352,6 +383,7 @@
 .footer-form {
   display: flex;
   flex-direction: column;
+
   button {
     margin-top: 10px;
   }
